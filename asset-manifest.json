@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pokemonbrowser/static/css/main.8f87b544.css",
+    "main.js": "/pokemonbrowser/static/js/main.74165dca.js",
+    "index.html": "/pokemonbrowser/index.html",
+    "main.8f87b544.css.map": "/pokemonbrowser/static/css/main.8f87b544.css.map",
+    "main.74165dca.js.map": "/pokemonbrowser/static/js/main.74165dca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f87b544.css",
+    "static/js/main.74165dca.js"
+  ]
+}
