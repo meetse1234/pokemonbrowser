@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #ef5350;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  height: 200;
+}
+
+
+.header-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.search-bar,
+.type-filter {
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 16px;
+}
+
+.search-bar::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+.type-filter {
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.pokemon-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.pokemon-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-5px);
+}
+
+.pokemon-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .pokemon-card img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.types {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.type {
+  margin: 0.2rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  background-color: #ddd;
+  color: white;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+}
+
+/* Type-specific colors */
+.type.fire { background: #f08030; }
+.type.water { background: #6890f0; }
+.type.grass { background: #78c850; }
+.type.electric { background: #f8d030; }
+.type.bug { background: #a8b820; }
+.type.normal { background: #a8a878; }
+.type.poison { background: #a040a0; }
+.type.ground { background: #e0c068; }
+.type.fairy { background: #ee99ac; }
+.type.fighting { background: #c03028; }
+.type.psychic { background: #f85888; }
+.type.rock { background: #b8a038; }
+.type.ghost { background: #705898; }
+.type.ice { background: #98d8d8; }
+.type.dragon { background: #7038f8; }
+.pokemon-card img {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
